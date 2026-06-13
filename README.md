@@ -177,9 +177,3 @@ Through this project, I gained hands-on experience in:
 
 **Aniruddha Shirke**
 
-LinkedIn: Add Your LinkedIn Profile Link
-GitHub: Add Your GitHub Profile Link
-
----
-
-⭐ If you found this project useful, consider giving it a star!
