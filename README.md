@@ -1,42 +1,38 @@
-# Titanic Survival Prediction 🚢
+# Data Science Internship Projects 🚀
+
+This repository contains Machine Learning projects completed during my **Data Science Internship at CodSoft**. These projects demonstrate skills in data preprocessing, exploratory data analysis, machine learning model development, evaluation, and visualization using Python.
+
+---
+
+# Project 1: Titanic Survival Prediction 🚢
 
 ## Overview
 
-This project aims to predict whether a passenger survived the Titanic disaster using Machine Learning techniques. The model is trained on the famous Titanic dataset and uses passenger information such as age, gender, passenger class, fare, and family details to make predictions.
-
-This project was completed as **Task 1** during my **Data Science Internship at CodSoft**.
-
----
+The Titanic Survival Prediction project aims to predict whether a passenger survived the Titanic disaster based on passenger information such as age, gender, ticket class, fare, and family details.
 
 ## Problem Statement
 
-Build a machine learning model that predicts whether a passenger on the Titanic survived or not based on available passenger data.
+Build a machine learning model that predicts whether a passenger on the Titanic survived or not using available passenger data.
 
----
-
-## Dataset
-
-The dataset contains information about Titanic passengers, including:
+## Dataset Features
 
 * PassengerId
-* Pclass (Passenger Class)
+* Pclass
 * Name
 * Sex
 * Age
-* SibSp (Number of Siblings/Spouses Aboard)
-* Parch (Number of Parents/Children Aboard)
+* SibSp
+* Parch
 * Ticket
 * Fare
 * Cabin
 * Embarked
 * Survived (Target Variable)
 
-Target Variable:
+### Target Variable
 
 * 0 → Did Not Survive
 * 1 → Survived
-
----
 
 ## Technologies Used
 
@@ -48,132 +44,199 @@ Target Variable:
 * Scikit-learn
 * Jupyter Notebook
 
----
+## Workflow
 
-## Project Workflow
+### Data Preprocessing
 
-### 1. Data Collection
+* Handled missing values
+* Encoded categorical variables
+* Feature selection and transformation
 
-* Loaded the Titanic dataset using Pandas.
-
-### 2. Data Preprocessing
-
-* Handled missing values.
-* Filled missing Age values with median.
-* Filled missing Embarked values with mode.
-* Removed unnecessary columns.
-* Encoded categorical features.
-
-### 3. Exploratory Data Analysis (EDA)
-
-* Survival Count Visualization
-* Survival by Gender
-* Survival by Passenger Class
-* Age Distribution Analysis
-* Fare Distribution Analysis
-* Correlation Heatmap
-
-### 4. Model Building
-
-* Split data into training and testing sets.
-* Trained a Logistic Regression model.
-
-### 5. Model Evaluation
-
-* Accuracy Score
-* Classification Report
-* Confusion Matrix
-
----
-
-## Visualizations
-
-The project includes various visualizations:
+### Exploratory Data Analysis
 
 * Survival Count Plot
-* Survival by Gender Plot
-* Survival by Passenger Class Plot
-* Age Distribution Histogram
-* Fare Distribution Histogram
+* Survival by Gender
+* Survival by Passenger Class
+* Age Distribution
+* Fare Distribution
 * Correlation Heatmap
-* Confusion Matrix Heatmap
 
----
+### Model Building
 
-## Machine Learning Algorithm
+* Logistic Regression
 
-### Logistic Regression
-
-Logistic Regression is a supervised machine learning algorithm used for binary classification problems. In this project, it predicts whether a passenger survived (1) or not (0).
-
----
-
-## Results
-
-The model successfully predicts passenger survival based on the given features and achieves good classification performance on the test dataset.
-
-Evaluation Metrics:
+### Evaluation Metrics
 
 * Accuracy Score
 * Precision
 * Recall
-* F1-Score
+* F1 Score
 * Confusion Matrix
+
+## Learning Outcomes
+
+* Data Cleaning
+* Feature Engineering
+* Data Visualization
+* Classification Models
+* Model Evaluation
 
 ---
 
-## How to Run the Project
+# Project 2: Movie Rating Prediction 🎬
 
-1. Clone the repository
+## Overview
+
+The Movie Rating Prediction project focuses on predicting movie ratings based on various attributes such as genre, director, actors, release year, duration, and vote count. The project uses machine learning regression techniques to estimate movie ratings accurately.
+
+## Problem Statement
+
+Develop a machine learning model that predicts movie ratings using historical movie data and relevant movie features.
+
+## Dataset Features
+
+* Movie Name
+* Year
+* Duration
+* Genre
+* Director
+* Actor 1
+* Actor 2
+* Actor 3
+* Votes
+* Rating (Target Variable)
+
+### Target Variable
+
+* Movie Rating
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Jupyter Notebook
+
+## Workflow
+
+### Data Preprocessing
+
+* Removed missing target values
+* Cleaned Year, Duration, and Votes columns
+* Converted data into machine-learning-friendly format
+* Handled missing values
+
+### Exploratory Data Analysis (EDA)
+
+* Rating Distribution
+* Correlation Heatmap
+* Movies Released Per Year
+* Duration Distribution
+* Votes vs Rating Analysis
+* Top Genres by Rating
+* Top Directors by Rating
+* Actual vs Predicted Rating Plot
+* Error Distribution Plot
+
+### Feature Engineering
+
+* One-Hot Encoding of:
+
+  * Genre
+  * Director
+  * Actor 1
+  * Actor 2
+  * Actor 3
+
+### Model Building
+
+* Random Forest Regressor
+
+### Evaluation Metrics
+
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* Root Mean Squared Error (RMSE)
+* R² Score
+
+## Visualizations
+
+The project includes:
+
+* Rating Distribution Histogram
+* Correlation Heatmap
+* Votes vs Rating Scatter Plot
+* Movies Released Per Year
+* Top Genres by Average Rating
+* Top Directors by Average Rating
+* Actual vs Predicted Ratings Plot
+* Error Distribution Plot
+* Feature Importance Plot
+
+## Learning Outcomes
+
+* Regression Modeling
+* Feature Engineering
+* Data Visualization
+* Machine Learning Pipelines
+* Model Performance Evaluation
+* Working with Real-World Movie Data
+
+---
+
+# Technologies Used Across Projects
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Jupyter Notebook
+
+---
+
+
+# How to Run
+
+### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Titanic-Survival-Prediction.git
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 ```
 
-2. Navigate to the project folder
+### Navigate to Project Folder
 
 ```bash
-cd Titanic-Survival-Prediction
+cd YOUR_REPOSITORY
 ```
 
-3. Install required libraries
+### Install Required Libraries
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-4. Open Jupyter Notebook
+### Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-5. Run the notebook cells sequentially.
+### Run Notebook Cells Sequentially
 
 ---
 
-## Learning Outcomes
-
-Through this project, I gained hands-on experience in:
-
-* Data Cleaning and Preprocessing
-* Exploratory Data Analysis (EDA)
-* Data Visualization
-* Feature Engineering
-* Machine Learning Model Building
-* Model Evaluation
-* Working with Real-World Datasets
-
----
-
-## Internship
+# Internship Details
 
 **Organization:** CodSoft
 **Role:** Data Science Intern
 
 ---
 
-## Author
+# Author
 
-**Aniruddha Shirke**
-
+## Aniruddha Shirke
